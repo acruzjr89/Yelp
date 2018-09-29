@@ -1,0 +1,293 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li240\fi-240\pardirnatural\partightenfactor0
+
+\f0\b\fs22 \cf0 \
+Showing Recent Issues\
+
+\f1\b0 Check dependencies\
+\
+The use of Swift 3 @objc inference in Swift 4 mode is deprecated. Please address deprecated @objc inference warnings, test your code with \'93Use of deprecated Swift 3 @objc inference\'94 logging enabled, and then disable inference by changing the "Swift 3 @objc Inference" build setting to "Default" for the "Yelp" target.\
+\
+Create product structure\
+\
+/bin/mkdir -p /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app\
+\
+ProcessProductPackaging "" /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp.app-Simulated.xcent\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    \
+\
+Entitlements:\
+\
+\{\
+    "application-identifier" = "Apple Software.com.codepath.Yelp";\
+    "keychain-access-groups" =     (\
+        "Apple Software.com.codepath.Yelp"\
+    );\
+\}\
+\
+\
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp.app-Simulated.xcent\
+\
+PhaseScriptExecution [CP]\\ Check\\ Pods\\ Manifest.lock /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Script-F9B4AEA0288D56A32EA870A3.sh\
+    cd /Users/macstudent/Desktop/Yelp\
+    /bin/sh -c /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Script-F9B4AEA0288D56A32EA870A3.sh\
+\
+CompileSwiftSources normal x86_64 com.apple.xcode.tools.swift.compiler\
+    cd /Users/macstudent/Desktop/Yelp\
+    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk\
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -incremental -module-name Yelp -Onone -enforce-exclusivity=checked -Xfrontend -enable-swift3-objc-inference -Xfrontend -warn-swift3-objc-inference-minimal -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk -target x86_64-apple-ios8.0 -g -module-cache-path /Users/macstudent/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Index/DataStore -swift-version 4 -I /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator -F /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator -F /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/AFNetworking -F /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/BDBOAuth1Manager -c -j4 /Users/macstudent/Desktop/Yelp/Yelp/BusinessCell.swift /Users/macstudent/Desktop/Yelp/Yelp/BusinessesViewController.swift /Users/macstudent/Desktop/Yelp/Yelp/Business.swift /Users/macstudent/Desktop/Yelp/Yelp/YelpClient.swift /Users/macstudent/Desktop/Yelp/Yelp/AppDelegate.swift -output-file-map /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp-OutputFileMap.json -parseable-output -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.swiftmodule -Xcc -I/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp-generated-files.hmap -Xcc -I/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp-own-target-headers.hmap -Xcc -I/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/all-product-headers.yaml -Xcc -iquote -Xcc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp-project-headers.hmap -Xcc -I/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/DerivedSources/x86_64 -Xcc -I/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/DerivedSources -Xcc -DDEBUG=1 -Xcc -DCOCOAPODS=1 -emit-objc-header -emit-objc-header-path /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp-Swift.h -Xcc -working-directory/Users/macstudent/Desktop/Yelp\
+\
+Ditto /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/DerivedSources/Yelp-Swift.h /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp-Swift.h\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /usr/bin/ditto -rsrc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp-Swift.h /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/DerivedSources/Yelp-Swift.h\
+\
+Ld /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Yelp normal x86_64\
+    cd /Users/macstudent/Desktop/Yelp\
+    export IPHONEOS_DEPLOYMENT_TARGET=8.0\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk -L/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator -F/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator -F/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/AFNetworking -F/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/BDBOAuth1Manager -filelist /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -mios-simulator-version-min=8.0 -dead_strip -Xlinker -object_path_lto -Xlinker /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -Xlinker -add_ast_path -Xlinker /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.swiftmodule -framework AFNetworking -framework BDBOAuth1Manager -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp.app-Simulated.xcent -framework Pods_Yelp -Xlinker -dependency_info -Xlinker /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp_dependency_info.dat -o /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Yelp\
+\
+Ditto /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.swiftmodule/x86_64.swiftmodule /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.swiftmodule\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /usr/bin/ditto -rsrc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.swiftmodule /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.swiftmodule/x86_64.swiftmodule\
+\
+Ditto /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.swiftmodule/x86_64.swiftdoc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.swiftdoc\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /usr/bin/ditto -rsrc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Objects-normal/x86_64/Yelp.swiftdoc /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.swiftmodule/x86_64.swiftdoc\
+\
+CompileXIB Yelp/Base.lproj/LaunchScreen.xib\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..\
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module Yelp --output-partial-info-plist /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/LaunchScreen-PartialInfo.plist --auto-activate-custom-fonts --target-device iphone --minimum-deployment-target 8.0 --output-format human-readable-text --compile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Base.lproj/LaunchScreen.nib /Users/macstudent/Desktop/Yelp/Yelp/Base.lproj/LaunchScreen.xib\
+\
+CompileStoryboard Yelp/Base.lproj/Main.storyboard\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..\
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module Yelp --output-partial-info-plist /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Main-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --minimum-deployment-target 8.0 --output-format human-readable-text --compilation-directory /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Base.lproj /Users/macstudent/Desktop/Yelp/Yelp/Base.lproj/Main.storyboard\
+\
+CompileAssetCatalog /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app Yelp/Images.xcassets\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/assetcatalog_dependencies --output-partial-info-plist /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/assetcatalog_generated_info.plist --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --filter-for-device-model iPhone10,5 --filter-for-device-os-version 11.4 --sticker-pack-identifier-prefix com.codepath.Yelp.sticker-pack. --target-device iphone --minimum-deployment-target 8.0 --platform iphonesimulator --product-type com.apple.product-type.application --compile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app /Users/macstudent/Desktop/Yelp/Yelp/Images.xcassets\
+\
+/* com.apple.actool.compilation-results */\
+/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Assets.car\
+/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/assetcatalog_generated_info.plist\
+\
+\
+ProcessInfoPlistFile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Info.plist Yelp/Info.plist\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    builtin-infoPlistUtility /Users/macstudent/Desktop/Yelp/Yelp/Info.plist -genpkginfo /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/assetcatalog_generated_info.plist -additionalcontentfile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Main-SBPartialInfo.plist -additionalcontentfile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/LaunchScreen-PartialInfo.plist -o /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Info.plist\
+\
+GenerateDSYMFile /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app.dSYM /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Yelp\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Yelp -o /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app.dSYM\
+\
+LinkStoryboards\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..\
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module Yelp --target-device iphone --minimum-deployment-target 8.0 --output-format human-readable-text --link /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Base.lproj/Main.storyboardc\
+\
+PhaseScriptExecution [CP]\\ Embed\\ Pods\\ Frameworks /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Script-50F492C5FB14C2003E718129.sh\
+    cd /Users/macstudent/Desktop/Yelp\
+    /bin/sh -c /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Script-50F492C5FB14C2003E718129.sh\
+\
+mkdir -p /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks\
+rsync -av --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework" "/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks"\
+building file list ... done\
+AFNetworking.framework/\
+AFNetworking.framework/AFNetworking\
+AFNetworking.framework/Info.plist\
+AFNetworking.framework/_CodeSignature/\
+AFNetworking.framework/_CodeSignature/CodeResources\
+\
+sent 682030 bytes  received 98 bytes  454752.00 bytes/sec\
+total size is 681593  speedup is 1.00\
+Code Signing /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/AFNetworking.framework with Identity -\
+/usr/bin/codesign --force --sign -  --preserve-metadata=identifier,entitlements "/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/AFNetworking.framework"\
+/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/AFNetworking.framework: replacing existing signature\
+rsync -av --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/BDBOAuth1Manager/BDBOAuth1Manager.framework" "/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks"\
+building file list ... done\
+BDBOAuth1Manager.framework/\
+BDBOAuth1Manager.framework/BDBOAuth1Manager\
+BDBOAuth1Manager.framework/Info.plist\
+BDBOAuth1Manager.framework/_CodeSignature/\
+BDBOAuth1Manager.framework/_CodeSignature/CodeResources\
+\
+sent 129346 bytes  received 98 bytes  258888.00 bytes/sec\
+total size is 128969  speedup is 1.00\
+Code Signing /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/BDBOAuth1Manager.framework with Identity -\
+/usr/bin/codesign --force --sign -  --preserve-metadata=identifier,entitlements "/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/BDBOAuth1Manager.framework"\
+/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/BDBOAuth1Manager.framework: replacing existing signature\
+\
+PhaseScriptExecution [CP]\\ Copy\\ Pods\\ Resources /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Script-3F40E8B139A4200DC63F903F.sh\
+    cd /Users/macstudent/Desktop/Yelp\
+    /bin/sh -c /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Script-3F40E8B139A4200DC63F903F.sh\
+\
+building file list ... done\
+\
+sent 29 bytes  received 20 bytes  98.00 bytes/sec\
+total size is 0  speedup is 0.00\
+\
+CopySwiftLibs /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app\
+    cd /Users/macstudent/Desktop/Yelp\
+    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate\
+    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk\
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Yelp --scan-folder /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks --scan-folder /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/PlugIns --scan-folder /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Pods_Yelp.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks --strip-bitcode --resource-destination /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app --resource-library libswiftRemoteMirror.dylib\
+\
+Requested Swift ABI version based on scanned binaries: 6\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCore.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCore.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCoreFoundation.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCoreFoundation.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCoreGraphics.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCoreGraphics.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCoreImage.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftCoreImage.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftDarwin.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftDarwin.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftDispatch.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftDispatch.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftFoundation.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftFoundation.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftMetal.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftMetal.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftObjectiveC.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftObjectiveC.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftQuartzCore.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftQuartzCore.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftSwiftOnoneSupport.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftSwiftOnoneSupport.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftUIKit.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftUIKit.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftos.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib\
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftos.dylib' '-r' '-o' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib'\
+Copying /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/libswiftRemoteMirror.dylib to /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/libswiftRemoteMirror.dylib\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCore.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylibProbing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylibProbing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib\
+\
+\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib'\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib'\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib'\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreImage.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreFoundation.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftCoreGraphics.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftSwiftOnoneSupport.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDarwin.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftDispatch.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftMetal.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftObjectiveC.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftQuartzCore.dylib'\
+Codesigning /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib\
+  /usr/bin/codesign '--force' '--sign' '-' '--verbose' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftUIKit.dylib'\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib\
+Probing signature of /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftFoundation.dylib'\
+  /usr/bin/codesign '-r-' '--display' '/Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app/Frameworks/libswiftos.dylib'\
+\
+Touch /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    /usr/bin/touch -c /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app\
+\
+ProcessProductPackaging "" /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp.app.xcent\
+    cd /Users/macstudent/Desktop/Yelp\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    \
+\
+Entitlements:\
+\
+\{\
+    "com.apple.security.get-task-allow" = 1;\
+\}\
+\
+\
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp.app.xcent\
+\
+CodeSign /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app\
+    cd /Users/macstudent/Desktop/Yelp\
+    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate\
+    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"\
+    \
+Signing Identity:     "-"\
+\
+    /usr/bin/codesign --force --sign - --entitlements /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Intermediates.noindex/Yelp.build/Debug-iphonesimulator/Yelp.build/Yelp.app.xcent --timestamp=none /Users/macstudent/Library/Developer/Xcode/DerivedData/Yelp-cwkpbmolyaqxzpfsuzhdejeuafsz/Build/Products/Debug-iphonesimulator/Yelp.app\
+\
+
+\f0\b \
+\
+Activity Log Complete    9/28/18, 5:40 PM\
+}
